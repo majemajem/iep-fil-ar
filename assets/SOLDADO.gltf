@@ -1,0 +1,233 @@
+{
+    "asset": {
+        "copyright": "2020 (c) Adobe Inc.",
+        "generator": "Adobe Dimension - ef4f41a6842c60acc27c15e21adfa2a5f9da2982",
+        "version": "2.0"
+    },
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 70,
+            "type": "VEC3",
+            "max": [
+                1.3841090202331544,
+                0.03749999776482582,
+                1.061708927154541
+            ],
+            "min": [
+                -1.3841090202331544,
+                -0.03749999776482582,
+                -1.061708927154541
+            ]
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 70,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 70,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5125,
+            "count": 18,
+            "type": "SCALAR",
+            "max": [
+                50.0
+            ],
+            "min": [
+                28.0
+            ]
+        },
+        {
+            "bufferView": 4,
+            "componentType": 5125,
+            "count": 162,
+            "type": "SCALAR",
+            "max": [
+                69.0
+            ],
+            "min": [
+                0.0
+            ]
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 840,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 840,
+            "byteLength": 840,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 1680,
+            "byteLength": 560,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 2240,
+            "byteLength": 72,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 2312,
+            "byteLength": 648,
+            "target": 34963
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 2960,
+            "uri": "SOLDADO_binary.bin"
+        }
+    ],
+    "cameras": [
+        {
+            "perspective": {
+                "znear": 0.000022679625544697047,
+                "yfov": 0.6024156808853149,
+                "zfar": 2.0,
+                "aspectRatio": 1.3333333730697632
+            },
+            "type": "perspective",
+            "name": "render_camera"
+        }
+    ],
+    "images": [
+        {
+            "name": "composited_baseColor_opacity",
+            "uri": "SOLDADO_images/composited_baseColor_opacity.png",
+            "mimeType": "image/png"
+        }
+    ],
+    "materials": [
+        {
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.6307567954063416,
+                    0.6307567954063416,
+                    0.6307567954063416,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 0.4000000059604645
+            },
+            "name": "Default Material",
+            "doubleSided": true
+        },
+        {
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 0
+                },
+                "metallicFactor": 0.0,
+                "roughnessFactor": 0.250980406999588
+            },
+            "alphaMode": "MASK",
+            "name": "_Table_COULISS_N270619white_st",
+            "doubleSided": true
+        }
+    ],
+    "meshes": [
+        {
+            "name": "20_Casa_De_Abitare_08",
+            "primitives": [
+                {
+                    "attributes": {
+                        "TEXCOORD_0": 2,
+                        "NORMAL": 1,
+                        "POSITION": 0
+                    },
+                    "indices": 3,
+                    "material": 0
+                },
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 4,
+                    "material": 1
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "translation": [
+                -4.158216953277588,
+                -1.8402718305587769,
+                -1.9277822971343995
+            ],
+            "rotation": [
+                -0.12059047073125839,
+                0.379409521818161,
+                0.04995020851492882,
+                0.9159756302833557
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                0.9999999403953552
+            ],
+            "camera": 0,
+            "name": "render_camera_n3d"
+        },
+        {
+            "translation": [
+                -0.0008392333984375,
+                0.4350301921367645,
+                0.0008906555012799799
+            ],
+            "rotation": [
+                -0.22486214339733125,
+                -0.2971055507659912,
+                0.7327752113342285,
+                0.5693907737731934
+            ],
+            "scale": [
+                0.2866511642932892,
+                0.7781841158866882,
+                0.24871478974819184
+            ],
+            "mesh": 0,
+            "name": "20_Casa_De_Abitare_08"
+        }
+    ],
+    "samplers": [
+        {}
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0,
+                1
+            ],
+            "name": "scene"
+        }
+    ],
+    "textures": [
+        {
+            "name": "composited_baseColor_opacity",
+            "sampler": 0,
+            "source": 0
+        }
+    ],
+    "scene": 0
+}
