@@ -22,11 +22,15 @@
         <a-assets>
           <img id="card" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.5/examples/image-tracking/assets/card-example/card.png" />
           <a-asset-item id="avatarModel" src="assets/SOLDADO.gltf"></a-asset-item>
+          <a-asset-item id="pruebaDos" src="assets/SOLDADO.glb"></a-asset-item>
         </a-assets>
   
         <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;" raycaster="far: ${customFields.libVersion}; objects: .clickable"></a-camera>
         <a-entity mindar-image-target="targetIndex: 0">
-          <a-gltf-model rotation="0 0 0 " position="0 0 1" scale="1 1 1" src="#avatarModel">
+            <a-gltf-model rotation="0 0 0 " position="0 0 1" scale="1 1 1" src="#avatarModel">
+            <a-gltf-model rotation="0 0 0" position="0 0 1.5" scale="1 1 1" src="#pruebaDos">  
+            <a-gltf-model rotation="0 0 0 " position="0 0 1" scale="0.1 0.1 0.1" src="#avatarModel">
+            <a-gltf-model rotation="0 0 0" position="0 0 1.5" scale="0.1 0.1 0.1" src="#pruebaDos">   
         </a-entity>
     </a-scene>
     <script type="module" src="/main.js"></script>
