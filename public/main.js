@@ -19,9 +19,10 @@ function insertarData(arrayOfEntities, arrayOfData) {
     console.log(audios);
     let textos = document.querySelectorAll("a-text");
     textos.forEach((texto, index) => {
-        texto.height = '20px';
-        texto.width = '40px';
-        texto.zOffset = '2';
+        // texto.height = '20px';
+        texto.width = '0.5';
+        texto.wrapCount = '20';
+        texto.zOffset = '0.5';
         console.log(arrayOfEntities[index]);
     });
     console.log(textos);
