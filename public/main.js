@@ -1,39 +1,47 @@
 const audioContext = new AudioContext();
-const inicioAudio = document.querySelector('.control');
+// const inicioAudio = document.querySelector('.control');
+// primero debo inicializar cada audio en su respectivo
+const modalTrack = document.querySelectorAll("a-entity");
+const sceneEl = document.querySelector('a-scene');
+const arSystem = sceneEl.systems["mindar-image-system"];
 
-const contenedores = document.querySelectorAll('.contenedor');
-
-inicioAudio.addEventListener('click', function() {
-    if (audioContext.state === 'suspended') {
-        audioContext.resume();
-    }
-})
-
-function addAudiosToBooks(arrayOfAudios) {
-    contenedores.innerHTML = arrayOfAudios.map((audio) => `<audio src="${audio.src}" class="audi" loop="false" preload="auto"></audio>`).join('');
-    const audioElement = document.querySelectorAll('.audi');
-    const track = audioContext.createMediaElementSource(audioElement);
-    track.connect(gainNode).connect(audioContext.destination);
-    contenedores.forEach((contenedor, i) => {
-        contenedor.addEventListener("targetFound", () => {
-            audioContext.resume();
-            audioElement.play();
+function insertarData(arrayOfEntities, arrayOfData) {
+    arrayOfEntities.forEach((entity, index) => {
+        // console.log(arrayOfAudios[0].audios[index]);
+        entity.insertAdjacentHTML('beforeend', `<audio src="${arrayOfData[0].audios[index].src}" autoplay="false"></audio>`);
+        entity.insertAdjacentHTML('beforeend', `<a-text class="textito" hidden="true" value="text" geometry="primitive:plane">${arrayOfData[0].texts[index].content}</a-text>`);
+        entity.addEventListener("targetFound", event => {
+            console.log("se logró");
         });
-        contenedor.addEventListener("targetLost", () => {
-            audioContext.stop();
-            audioElement.pause();
-        });
+        // console.log(arrayOfAudios[0].audios[index].src);
     });
+    let audios = document.querySelectorAll("audio");
+    console.log(audios);
+    let textos = document.querySelectorAll("a-text");
+    textos.forEach((texto, index) => {
+        texto.height = '20px';
+        texto.width = '40px';
+        texto.zOffset = '2';
+        console.log(arrayOfEntities[index]);
+    });
+    console.log(textos);
+    // console.log(modalTrack);
 };
 
-// addAudiosToBooks('.')
-// FALTA COMPLETAR FUNCIÓN
-
-// contenedores.forEach((contenedor, i) => {
-//     let arrayOfAudios = [];
-//     arrayOfAudios.push('./data/audios.json');
-//     contenedor.innerHTML = arrayOfAudios.map((audio) => `<audio src="${audio.src}" class="audi" loop="false" preload="auto"></audio>`).join('');
-//     contenedor.addEventListener("targetFound", () => {
-//         contenedor.addAudiosToBooks('./data/audios.json', i);
-//     })
-// });
+function fetchJSONData() {
+    fetch("./public/data/audios.json")
+        .then((res) => {
+            if (!res.ok) {
+                throw new Error
+                    (`HTTP error! Status: ${res.status}`);
+            }
+            return res.json();
+        })
+        .then((data) => {
+            insertarData(modalTrack, data)
+        })
+        .catch((error) => 
+               console.error("Unable to fetch data:", error));
+}
+fetchJSONData();
+// console.log(audios);
