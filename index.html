@@ -20,14 +20,13 @@
 <body style="margin : 0px; overflow: hidden;">
     <a-scene mindar-image="imageTargetSrc: public/mindar/portadas-prueba.mind; maxTrack: 1; filterMinCF: 0.0005; filterBeta: 0.05; warmupTolerance: 5; missTolerance: 5" color-space="sRGB" class="control" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
         <a-assets>
-          <!-- <a-asset-item id="avatarModel" src="assets/SOLDADO.gltf"></a-asset-item> -->
           <a-asset-item id="libro01" src="assets/1-PERUPROBLEMA.glb"></a-asset-item>
           <a-asset-item id="libro02" src="assets/2-CLASES.glb"></a-asset-item>
           <a-asset-item id="libro03" src="assets/3-DESBORDE POPULAR.glb"></a-asset-item>
-          <!-- <a-asset-item id="libro04" src="assets/4-MROST.glb"></a-asset-item>
+          <a-asset-item id="libro04" src="assets/4-MROST.glb"></a-asset-item>
           <a-asset-item id="libro05" src="assets/5-PENDULO.glb"></a-asset-item>
           <a-asset-item id="libro06" src="assets/6-CABALLOS DE TROYA.glb"></a-asset-item>
-          <a-asset-item id="libro07" src="assets/7-ESPEJISMO.glb"></a-asset-item>
+          <!-- <a-asset-item id="libro07" src="assets/7-ESPEJISMO.glb"></a-asset-item>
           <a-asset-item id="libro08" src="assets/8-HPC.glb"></a-asset-item>
           <a-asset-item id="libro09" src="assets/9-LA DECADA DE LA ANTI.glb"></a-asset-item>
           <a-asset-item id="libro10" src="assets/10-SOLDADO.glb"></a-asset-item>
@@ -48,6 +47,21 @@
 
         <a-entity mindar-image-target="targetIndex: 2" class="contenedor">
           <a-gltf-model src="#libro03" id="model03" class="libro" position="0 0 1.5" rotation="-15 -15 0" scale="1 1 1" animation="property: rotation; to: 0 30 0; dur: 2000; easing: easeInOutQuad; loop: true; dir: alternate"> 
+        </a-entity>
+
+        <a-entity mindar-image-target="targetIndex: 3" class="contenedor">
+          <a-gltf-model src="#libro04" id="model04" class="libro" position="0 0 1.5" rotation="-15 -15 0" scale="1 1 1" animation="property: rotation; to: 0 30 0; dur: 2000; easing: easeInOutQuad; loop: true; dir: alternate">
+          <!-- Pedir a Melissa que te pase los archivos en glb sin rotación, esa ya la aplicas por tu cuenta (se puede animar incluso) -->
+        </a-entity>
+
+        <a-entity mindar-image-target="targetIndex: 4" class="contenedor">
+          <a-gltf-model src="#libro05" id="model05" class="libro" position="0 0 1.5" rotation="-15 -15 0" scale="1 1 1" animation="property: rotation; to: 0 30 0; dur: 2000; easing: easeInOutQuad; loop: true; dir: alternate">
+          <!-- Pedir a Melissa que te pase los archivos en glb sin rotación, esa ya la aplicas por tu cuenta (se puede animar incluso) -->
+        </a-entity>
+
+        <a-entity mindar-image-target="targetIndex: 5" class="contenedor">
+          <a-gltf-model src="#libro06" id="model06" class="libro" position="0 0 1.5" rotation="-15 -15 0" scale="1 1 1" animation="property: rotation; to: 0 30 0; dur: 2000; easing: easeInOutQuad; loop: true; dir: alternate">
+          <!-- Pedir a Melissa que te pase los archivos en glb sin rotación, esa ya la aplicas por tu cuenta (se puede animar incluso) -->
         </a-entity>
     </a-scene>
     <script type="module" src="public/main.js"></script>

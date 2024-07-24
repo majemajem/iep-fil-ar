@@ -12,6 +12,7 @@ function insertarData(arrayOfEntities, arrayOfData) {
         entity.insertAdjacentHTML('beforeend', `<a-text class="textito" hidden="true" value="${arrayOfData[0].texts[index].content}" geometry="primitive:plane" color="black" font="monoid"></a-text>`);
         entity.addEventListener("targetFound", event => {
             console.log("se logró");
+            //Aquí entra la parte de activar los audios
         });
         // console.log(arrayOfAudios[0].audios[index].src);
     });
@@ -20,8 +21,8 @@ function insertarData(arrayOfEntities, arrayOfData) {
     let textos = document.querySelectorAll("a-text");
     textos.forEach((texto, index) => {
         // texto.height = '20px';
-        texto.width = '0.5';
-        texto.wrapCount = '20';
+        texto.width = '0.3';
+        texto.wrapCount = '80';
         texto.zOffset = '0.5';
         console.log(arrayOfEntities[index]);
     });
@@ -30,7 +31,7 @@ function insertarData(arrayOfEntities, arrayOfData) {
 };
 
 function fetchJSONData() {
-    fetch("./public/data/audios.json")
+    fetch("./public/data/datos.json")
         .then((res) => {
             if (!res.ok) {
                 throw new Error
