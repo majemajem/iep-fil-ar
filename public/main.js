@@ -9,7 +9,7 @@ function insertarData(arrayOfEntities, arrayOfData) {
     arrayOfEntities.forEach((entity, index) => {
         // console.log(arrayOfAudios[0].audios[index]);
         entity.insertAdjacentHTML('beforeend', `<audio src="${arrayOfData[0].audios[index].src}" autoplay="false"></audio>`);
-        entity.insertAdjacentHTML('beforeend', `<a-text class="textito" hidden="true" value="text" geometry="primitive:plane">${arrayOfData[0].texts[index].content}</a-text>`);
+        entity.insertAdjacentHTML('beforeend', `<a-text class="textito" hidden="true" value="${arrayOfData[0].texts[index].content}" geometry="primitive:plane" color="black" font="monoid"></a-text>`);
         entity.addEventListener("targetFound", event => {
             console.log("se logró");
         });
