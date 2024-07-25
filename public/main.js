@@ -11,7 +11,7 @@ function insertarData(arrayOfEntities, arrayOfData) {
     arrayOfEntities.forEach((entity, index) => {
         // console.log(arrayOfAudios[0].audios[index]);
         entity.insertAdjacentHTML('beforeend', `<audio src="${arrayOfData[0].audios[index].src}" loop="false"></audio>`);
-        entity.insertAdjacentHTML('beforeend', `<a-text class="textito" hidden="true" value="${arrayOfData[0].texts[index].content}" geometry="primitive:plane" color="white" font="monoid"></a-text>`);
+        entity.insertAdjacentHTML('beforeend', `<a-text class="textito" hidden="true" value="${arrayOfData[0].texts[index].content}" geometry="primitive:plane" color="white" font="monoid" width="0.3" wrapCount="80" zOffset="0.5"></a-text>`);
         // console.log(arrayOfAudios[0].audios[index].src);
     });
     audios = document.querySelectorAll("audio");
@@ -23,12 +23,12 @@ function insertarData(arrayOfEntities, arrayOfData) {
     });
     console.log(tracks);
     let textos = document.querySelectorAll("a-text");
-    textos.forEach((texto, index) => {
+    textos.forEach((index) => {
         // texto.height = '20px';
-        texto.width = '0.3';
-        texto.wrapCount = '10';
-        texto.zOffset = '0.5';
-        // console.log(arrayOfEntities[index]);    
+        textos[index].width = '0.3';
+        textos[index].mode = 'pre';
+        textos[index].wrapCount = '10';
+        textos[index].zOffset = '0.5';  
     });
     // console.log(textos);
     arrayOfEntities.forEach((entity, index) => {
