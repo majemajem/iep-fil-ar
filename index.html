@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <title>IEP AR</title>
-    <meta charset="UTF-8">
+    <!-- <meta charset="UTF-8"> -->
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.5/dist/mindar-image.prod.js"></script> -->
     <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
@@ -37,30 +38,30 @@
   
         <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;" raycaster="far: ${customFields.libVersion}; objects: .clickable"></a-camera>
         <a-entity mindar-image-target="targetIndex: 0" class="contenedor">
-          <a-gltf-model src="#libro01" id="model01" class="libro" position="0 0 1.5" rotation="-15 -15 0" scale="1.3 1.3 1.3" animation="property: rotation; to: 0 30 0; dur: 2000; easing: easeInOutQuad; loop: true; dir: alternate">
+          <a-gltf-model src="#libro01" id="model01" class="libro" position="0 0 1.5" rotation="-15 -30 0" scale="1.3 1.3 1.3" animation="property: rotation; to: 0 15 0; dur: 4000; easing: easeInOutQuad; loop: true; dir: alternate">
           <!-- Pedir a Melissa que te pase los archivos en glb sin rotación, esa ya la aplicas por tu cuenta (se puede animar incluso) -->
         </a-entity>
 
         <a-entity mindar-image-target="targetIndex: 1" class="contenedor">
-          <a-gltf-model src="#libro02" id="model02" class="libro" position="0 0 1.5" rotation="-15 -15 0" scale="1.3 1.3 1.3" animation="property: rotation; to: 0 30 0; dur: 2000; easing: easeInOutQuad; loop: true; dir: alternate">
+          <a-gltf-model src="#libro02" id="model02" class="libro" position="0 0 1.5" rotation="-15 -30 0" scale="2 2 2" animation="property: rotation; to: 0 15 0; dur: 4000; easing: easeInOutQuad; loop: true; dir: alternate">
         </a-entity>
 
         <a-entity mindar-image-target="targetIndex: 2" class="contenedor">
-          <a-gltf-model src="#libro03" id="model03" class="libro" position="0 0 1.5" rotation="-15 -15 0" scale="1.3 1.3 1.3" animation="property: rotation; to: 0 30 0; dur: 2000; easing: easeInOutQuad; loop: true; dir: alternate"> 
+          <a-gltf-model src="#libro03" id="model03" class="libro" position="0 0 1.5" rotation="-15 -30 0" scale="1.3 1.3 1.3" animation="property: rotation; to: 0 15 0; dur: 4000; easing: easeInOutQuad; loop: true; dir: alternate"> 
         </a-entity>
 
         <a-entity mindar-image-target="targetIndex: 3" class="contenedor">
-          <a-gltf-model src="#libro04" id="model04" class="libro" position="0 0 1.5" rotation="-15 -15 0" scale="1.3 1.3 1.3" animation="property: rotation; to: 0 30 0; dur: 2000; easing: easeInOutQuad; loop: true; dir: alternate">
+          <a-gltf-model src="#libro04" id="model04" class="libro" position="0 0 1.5" rotation="-15 -30 0" scale="1.3 1.3 1.3" animation="property: rotation; to: 0 15 0; dur: 4000; easing: easeInOutQuad; loop: true; dir: alternate">
           <!-- Pedir a Melissa que te pase los archivos en glb sin rotación, esa ya la aplicas por tu cuenta (se puede animar incluso) -->
         </a-entity>
 
         <a-entity mindar-image-target="targetIndex: 4" class="contenedor">
-          <a-gltf-model src="#libro05" id="model05" class="libro" position="0 0 1.5" rotation="-15 -15 0" scale="1.3 1.3 1.3" animation="property: rotation; to: 0 30 0; dur: 2000; easing: easeInOutQuad; loop: true; dir: alternate">
+          <a-gltf-model src="#libro05" id="model05" class="libro" position="0 0 1.5" rotation="-15 -30 0" scale="1.3 1.3 1.3" animation="property: rotation; to: 0 15 0; dur: 4000; easing: easeInOutQuad; loop: true; dir: alternate">
           <!-- Pedir a Melissa que te pase los archivos en glb sin rotación, esa ya la aplicas por tu cuenta (se puede animar incluso) -->
         </a-entity>
 
         <a-entity mindar-image-target="targetIndex: 5" class="contenedor">
-          <a-gltf-model src="#libro06" id="model06" class="libro" position="0 0 1.5" rotation="-15 -15 0" scale="1.3 1.3 1.3" animation="property: rotation; to: 0 30 0; dur: 2000; easing: easeInOutQuad; loop: true; dir: alternate">
+          <a-gltf-model src="#libro06" id="model06" class="libro" position="0 0 1.5" rotation="-15 -30 0" scale="1.3 1.3 1.3" animation="property: rotation; to: 0 15 0; dur: 4000; easing: easeInOutQuad; loop: true; dir: alternate">
           <!-- Pedir a Melissa que te pase los archivos en glb sin rotación, esa ya la aplicas por tu cuenta (se puede animar incluso) -->
         </a-entity>
     </a-scene>
