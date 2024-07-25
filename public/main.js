@@ -11,7 +11,9 @@ function insertarData(arrayOfEntities, arrayOfData) {
     arrayOfEntities.forEach((entity, index) => {
         // console.log(arrayOfAudios[0].audios[index]);
         entity.insertAdjacentHTML('beforeend', `<audio src="${arrayOfData[0].audios[index].src}" loop="false"></audio>`);
-        entity.insertAdjacentHTML('beforeend', `<a-text class="textito" hidden="true" value="${arrayOfData[0].texts[index].content}" geometry="primitive:plane; height:2;width:1.6" material="color:#2e2e2e" align="left" anchor="center" baseline="center" color="white" font="mozillavr" width="1.55" wrapCount="100" zOffset="0.1" position="0 -1 2" rotation="-40 0 0"></a-text>`);
+        // entity.insertAdjacentHTML('beforeend', `<a-text class="textito" hidden="true" value="${arrayOfData[0].texts[index].content}" geometry="primitive:plane; height:2;width:1.6" material="color:#2e2e2e" align="left" anchor="center" baseline="center" color="white" font="mozillavr" width="1.55" wrapCount="100" zOffset="0.1" position="0 -1 2" rotation="-40 0 0"></a-text>`);
+        entity.insertAdjacentHTML('beforeend', `<a-plane position="0 0 1.5" rotation="-40 0 0" width="2" height="2" material="src:${arrayOfData[0].texts[index].src}; transparent: true"></a-plane>`);
+        entity.insertAdjacentHTML('beforeend', `<a-plane position="0 0 1.4" rotation="-40 0 0" width="2" height="2" color="#e0e0e0"></a-plane>`);
         // console.log(arrayOfAudios[0].audios[index].src);
     });
     audios = document.querySelectorAll("audio");
