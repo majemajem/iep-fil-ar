@@ -11,7 +11,7 @@ function insertarData(arrayOfEntities, arrayOfData) {
     arrayOfEntities.forEach((entity, index) => {
         // console.log(arrayOfAudios[0].audios[index]);
         entity.insertAdjacentHTML('beforeend', `<audio src="${arrayOfData[0].audios[index].src}" loop="false"></audio>`);
-        entity.insertAdjacentHTML('beforeend', `<a-text class="textito" hidden="true" value="${arrayOfData[0].texts[index].content}" geometry="primitive:plane" color="white" font="monoid" width="0.2" wrapCount="100" zOffset="0.5"></a-text>`);
+        entity.insertAdjacentHTML('beforeend', `<a-text class="textito" hidden="true" value="${arrayOfData[0].texts[index].content}" geometry="primitive:plane; height:2;width:1" material="color:#b7a9a9" color="black" font="monoid" width="0.6" wrapCount="100" zOffset="0.5" position="0 -1 2" rotation="0 -40 0"></a-text>`);
         // console.log(arrayOfAudios[0].audios[index].src);
     });
     audios = document.querySelectorAll("audio");
@@ -30,7 +30,7 @@ function insertarData(arrayOfEntities, arrayOfData) {
         entity.addEventListener("targetFound", () => {
             audios[index].play();
             console.log("se logró");
-            //Aquí entra la parte de activar los audios
+            //Probar esta parte en casa
         });
         entity.addEventListener("targetLost", () => {
             audios[index].pause();
