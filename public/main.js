@@ -25,7 +25,23 @@ function insertarData(arrayOfEntities, arrayOfData) {
     let textos = document.querySelectorAll("a-text");
 
     console.log(textos);
-    arrayOfEntities.forEach((entity, index) => {
+    // arrayOfEntities.forEach((entity, index) => {
+    //     console.log(audios[index]);
+    //     entity.addEventListener("targetFound", () => {
+    //         tracks[index].mediaElement.play();
+    //         tracks[index].mediaElement.loop = false;
+    //         // console.log(audios[index]);
+    //     });
+    //     entity.addEventListener("targetLost", () => {
+    //         tracks[index].mediaElement.pause();
+    //         tracks[index].mediaElement.currentTime = 0;
+    //         // console.log(tracks);
+    //     })
+    // })
+};
+
+function listening(arrayofEntities) {
+    arrayofEntities.forEach((entity, index) => {
         console.log(audios[index]);
         entity.addEventListener("targetFound", () => {
             tracks[index].mediaElement.play();
@@ -38,7 +54,7 @@ function insertarData(arrayOfEntities, arrayOfData) {
             // console.log(tracks);
         })
     })
-};
+}
 
 function fetchJSONData() {
     fetch("./public/data/datos.json")
@@ -50,7 +66,8 @@ function fetchJSONData() {
             return res.json();
         })
         .then((data) => {
-            insertarData(modalTrack, data)
+            insertarData(modalTrack, data);
+            listening(modalTrack);
         })
         .catch((error) => 
                console.error("Unable to fetch data:", error));
