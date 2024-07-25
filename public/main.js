@@ -28,13 +28,13 @@ function insertarData(arrayOfEntities, arrayOfData) {
     arrayOfEntities.forEach((entity, index) => {
         console.log(audios[index]);
         entity.addEventListener("targetFound", () => {
-            tracks[index].mediaElement.currentTime = 0;
-            tracks[index].mediaElement.loop = false;
             tracks[index].mediaElement.play();
+            tracks[index].mediaElement.loop = false;
             // console.log(audios[index]);
         });
         entity.addEventListener("targetLost", () => {
             tracks[index].mediaElement.pause();
+            tracks[index].mediaElement.currentTime = 0;
             // console.log(tracks);
         })
     })
