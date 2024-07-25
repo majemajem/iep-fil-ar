@@ -33,12 +33,12 @@ function insertarData(arrayOfEntities, arrayOfData) {
     // console.log(textos);
     arrayOfEntities.forEach((entity, index) => {
         console.log(audios[index]);
-        entity.addEventListener("targetFound", event => {
+        entity.addEventListener("targetFound", () => {
             audios[index].play();
             console.log("se logró");
             //Aquí entra la parte de activar los audios
         });
-        entity.addEventListener("targetLost", event => {
+        entity.addEventListener("targetLost", () => {
             audios[index].pause();
         })
     })
