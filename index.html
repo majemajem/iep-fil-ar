@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <title>IEP AR</title>
-    <!-- <meta charset="UTF-8"> -->
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.5/dist/mindar-image.prod.js"></script> -->
     <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
@@ -19,7 +18,7 @@
     </style>
 </head>
 <body style="margin : 0px; overflow: hidden;">
-    <a-scene mindar-image="imageTargetSrc: public/mindar/portadas-prueba.mind; maxTrack: 1; filterMinCF: 0.0005; filterBeta: 0.05; warmupTolerance: 5; missTolerance: 5" color-space="sRGB" class="control" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+    <a-scene mindar-image="imageTargetSrc: public/mindar/portadas.mind; maxTrack: 1; filterMinCF: 0.0005; filterBeta: 0.05; warmupTolerance: 5; missTolerance: 5" color-space="sRGB" class="control" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
         <a-assets>
           <a-asset-item id="libro01" src="assets/1-PERUPROBLEMA.glb"></a-asset-item>
           <a-asset-item id="libro02" src="assets/2-CLASES.glb"></a-asset-item>
@@ -27,13 +26,13 @@
           <a-asset-item id="libro04" src="assets/4-MROST.glb"></a-asset-item>
           <a-asset-item id="libro05" src="assets/5-PENDULO.glb"></a-asset-item>
           <a-asset-item id="libro06" src="assets/6-CABALLOS DE TROYA.glb"></a-asset-item>
-          <!-- <a-asset-item id="libro07" src="assets/7-ESPEJISMO.glb"></a-asset-item>
+          <a-asset-item id="libro07" src="assets/7-ESPEJISMO.glb"></a-asset-item>
           <a-asset-item id="libro08" src="assets/8-HPC.glb"></a-asset-item>
           <a-asset-item id="libro09" src="assets/9-LA DECADA DE LA ANTI.glb"></a-asset-item>
           <a-asset-item id="libro10" src="assets/10-SOLDADO.glb"></a-asset-item>
           <a-asset-item id="libro11" src="assets/11-CORRUPCION.glb"></a-asset-item>
           <a-asset-item id="libro12" src="assets/12-DESIGUALDADES.glb"></a-asset-item>
-          <a-asset-item id="libro13" src="assets/13-LA PROMESA.glb"></a-asset-item> -->
+          <a-asset-item id="libro13" src="assets/13-LA PROMESA.glb"></a-asset-item>
         </a-assets>
   
         <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;" raycaster="far: ${customFields.libVersion}; objects: .clickable"></a-camera>
@@ -60,6 +59,34 @@
 
         <a-entity mindar-image-target="targetIndex: 5" class="contenedor">
           <a-gltf-model src="#libro06" id="model06" class="libro" position="0 0 1.5" rotation="-15 -30 0" scale="1.3 1.3 1.3" animation="property: rotation; to: 0 15 0; dur: 4000; easing: easeInOutQuad; loop: true; dir: alternate">
+        </a-entity>
+
+        <a-entity mindar-image-target="targetIndex: 6" class="contenedor">
+          <a-gltf-model src="#libro07" id="model06" class="libro" position="0 0 1.5" rotation="-15 -30 0" scale="1.3 1.3 1.3" animation="property: rotation; to: 0 15 0; dur: 4000; easing: easeInOutQuad; loop: true; dir: alternate">
+        </a-entity>
+
+        <a-entity mindar-image-target="targetIndex: 7" class="contenedor">
+          <a-gltf-model src="#libro08" id="model06" class="libro" position="0 0 1.5" rotation="-15 -30 0" scale="1.3 1.3 1.3" animation="property: rotation; to: 0 15 0; dur: 4000; easing: easeInOutQuad; loop: true; dir: alternate">
+        </a-entity>
+
+        <a-entity mindar-image-target="targetIndex: 8" class="contenedor">
+          <a-gltf-model src="#libro09" id="model06" class="libro" position="0 0 1.5" rotation="-15 -30 0" scale="1.3 1.3 1.3" animation="property: rotation; to: 0 15 0; dur: 4000; easing: easeInOutQuad; loop: true; dir: alternate">
+        </a-entity>
+
+        <a-entity mindar-image-target="targetIndex: 9" class="contenedor">
+          <a-gltf-model src="#libro10" id="model06" class="libro" position="0 0 1.5" rotation="-15 -30 0" scale="1.3 1.3 1.3" animation="property: rotation; to: 0 15 0; dur: 4000; easing: easeInOutQuad; loop: true; dir: alternate">
+        </a-entity>
+
+        <a-entity mindar-image-target="targetIndex: 10" class="contenedor">
+          <a-gltf-model src="#libro11" id="model06" class="libro" position="0 0 1.5" rotation="-15 -30 0" scale="1.3 1.3 1.3" animation="property: rotation; to: 0 15 0; dur: 4000; easing: easeInOutQuad; loop: true; dir: alternate">
+        </a-entity>
+
+        <a-entity mindar-image-target="targetIndex: 11" class="contenedor">
+          <a-gltf-model src="#libro12" id="model06" class="libro" position="0 0 1.5" rotation="-15 -30 0" scale="1.3 1.3 1.3" animation="property: rotation; to: 0 15 0; dur: 4000; easing: easeInOutQuad; loop: true; dir: alternate">
+        </a-entity>
+
+        <a-entity mindar-image-target="targetIndex: 12" class="contenedor">
+          <a-gltf-model src="#libro13" id="model06" class="libro" position="0 0 1.5" rotation="-15 -30 0" scale="1.3 1.3 1.3" animation="property: rotation; to: 0 15 0; dur: 4000; easing: easeInOutQuad; loop: true; dir: alternate">
         </a-entity>
     </a-scene>
     <script type="module" src="public/main.js"></script>

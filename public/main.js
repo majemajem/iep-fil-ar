@@ -25,36 +25,41 @@ function insertarData(arrayOfEntities, arrayOfData) {
     let textos = document.querySelectorAll("a-text");
 
     console.log(textos);
-    // arrayOfEntities.forEach((entity, index) => {
-    //     console.log(audios[index]);
-    //     entity.addEventListener("targetFound", () => {
-    //         tracks[index].mediaElement.play();
-    //         tracks[index].mediaElement.loop = false;
-    //         // console.log(audios[index]);
-    //     });
-    //     entity.addEventListener("targetLost", () => {
-    //         tracks[index].mediaElement.pause();
-    //         tracks[index].mediaElement.currentTime = 0;
-    //         // console.log(tracks);
-    //     })
-    // })
-};
-
-function listening(arrayofEntities) {
-    arrayofEntities.forEach((entity, index) => {
-        console.log(audios[index]);
+    arrayOfEntities.forEach((entity, index) => {
+        // console.log(audios[index]);
         entity.addEventListener("targetFound", () => {
+            if(audioContext.state === 'suspended') {
+                audioContext.resume();
+            }
             tracks[index].mediaElement.play();
             tracks[index].mediaElement.loop = false;
+            console.log(entity);
+            console.log(tracks);
             // console.log(audios[index]);
         });
         entity.addEventListener("targetLost", () => {
             tracks[index].mediaElement.pause();
             tracks[index].mediaElement.currentTime = 0;
-            // console.log(tracks);
+            console.log(tracks);
         })
     })
-}
+};
+
+// function listening(arrayofEntities) {
+//     arrayofEntities.forEach((entity, index) => {
+//         console.log(audios[index]);
+//         entity.addEventListener("targetFound", () => {
+//             tracks[index].mediaElement.play();
+//             tracks[index].mediaElement.loop = false;
+//             // console.log(audios[index]);
+//         });
+//         entity.addEventListener("targetLost", () => {
+//             tracks[index].mediaElement.pause();
+//             tracks[index].mediaElement.currentTime = 0;
+//             // console.log(tracks);
+//         })
+//     })
+// }
 
 function fetchJSONData() {
     fetch("./public/data/datos.json")
@@ -67,7 +72,7 @@ function fetchJSONData() {
         })
         .then((data) => {
             insertarData(modalTrack, data);
-            listening(modalTrack);
+            // listening(modalTrack);
         })
         .catch((error) => 
                console.error("Unable to fetch data:", error));
