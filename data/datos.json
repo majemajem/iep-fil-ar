@@ -3,97 +3,97 @@
         "name" : "Coleccion IEP",
         "audios" : [
             {
-                "src" : "./public/audios/1-PERU PROBLEMA.mp3"
+                "src" : "./audios/1-PERU PROBLEMA.mp3"
             },
             {
-                "src" :"./public/audios/2-CLASES.mp3"
+                "src" :"./audios/2-CLASES.mp3"
             },
             {
-                "src" : "./public/audios/3-DESBORDE POPULAR.mp3"
+                "src" : "./audios/3-DESBORDE POPULAR.mp3"
             },
             {
-                "src" : "./public/audios/4-MROST.mp3"
+                "src" : "./audios/4-MROST.mp3"
             },
             {
-                "src" : "./public/audios/5-PENDULO.mp3"
+                "src" : "./audios/5-PENDULO.mp3"
             },
             {
-                "src" : "./public/audios/6-CABALLOS DE TROYA.mp3"
+                "src" : "./audios/6-CABALLOS DE TROYA.mp3"
             },
             {
-                "src" : "./public/audios/7-ESPEJISMO.mp3"
+                "src" : "./audios/7-ESPEJISMO.mp3"
             },
             {
-                "src" : "./public/audios/8-HPC.mp3"
+                "src" : "./audios/8-HPC.mp3"
             },
             {
-                "src" : "./public/audios/9-LA DECADA DE LA ANTI.mp3"
+                "src" : "./audios/9-LA DECADA DE LA ANTI.mp3"
             },
             {
-                "src" : "./public/audios/10-SOLDADO.mp3"
+                "src" : "./audios/10-SOLDADO.mp3"
             },
             {
-                "src" : "./public/audios/11-CORRUPCION.mp3"
+                "src" : "./audios/11-CORRUPCION.mp3"
             },
             {
-                "src" : "./public/audios/12-DESIGUALDADES.mp3"
+                "src" : "./audios/12-DESIGUALDADES.mp3"
             },
             {
-                "src" : "./public/audios/13-LA PROMESA.mp3"
+                "src" : "./audios/13-LA PROMESA.mp3"
             }
         ],
         "texts" : [
             {
                 "content" : "&quot;Perú Problema&quot; fue uno de los primeros libros publicados por el Instituto de Estudios Peruanos. Vio la luz apenas cuatro a&#241;os después de su fundación. El texto reúne cinco ensayos escritos por investigadores de la casa. Cuatro de estos investigadores formaban parte del núcleo fundador del Instituto de Estudios Peruanos: José Matos Mar, Jorge Bravo Bresani, Augusto Salazar Bondy y Alberto Escobar. El quinto, Julio Cotler, no formaba parte propiamente de este núcleo fundador, pero se incorporó muy rápidamente tras regresar de sus estudios de posgrado en el extranjero. \nLos ensayos que conforman el texto se articulan en torno a las dificultades de la transición entre una sociedad tradicional y una sociedad moderna, y si bien tienen diferentes tonos de optimismo y diferentes estilos, muestran las preocupaciones del Instituto en aquellos a&#241;os: los desafíos de integración social que implicaba la modernización del Perú. Otra característica del texto es que los ensayos pertenecen a diferentes disciplinas académicas, evidenciando la pluralidad que desde el principio reunió el Instituto de Estudios Peruanos y que se mantiene hasta el día de hoy. \nTodos los ensayos que conforman este texto tienen la misma voluntad crítica: interrogarse por el futuro del Perú. En este sentido, &quot;Perú Problema&quot; sigue siendo hasta la actualidad una de las series emblemáticas del Instituto de Estudios Peruanos. Más allá de ser el título de este libro, se convirtió en una serie que ha seguido publicando hasta la fecha nuevos títulos en los que, quienes trabajamos en el Instituto, nos interrogamos por los desafíos del Perú contemporáneo.",
-                "src" : "./public/textos/1-PERUPROBLEMA.png"
+                "src" : "./textos/1-PERUPROBLEMA.png"
             },
             {
                 "content" : "En 1978 Julio Cotler publica Clases, Estado y Nación en el Perú, quizá su libro más famoso y reconocido. Se trata de un texto que ha sido leído por sucesivas generaciones de peruanos y que aún hoy, en tiempos de crisis permanente, sigue resonando en nuestros debates. \nPartiendo de un sólido conocimiento de la historia peruana, Cotler sostiene en el libro que las grandes transformaciones sociales del último siglo no estuvieron acompa&#241;adas de cambios políticos equivalentes, que permitieran un completo ejercicio de la ciudadanía y una renovada idea de comunidad nacional. De ahí la persistencia de elementos como las prácticas patrimoniales, las relaciones clientelistas y la propensión autoritaria, que han impregnado y siguen impregnando el funcionamiento tanto de las instituciones oficiales como de las subjetividades políticas peruanas.",
-                "src" : "./public/textos/2-CLASES.png"
+                "src" : "./textos/2-CLASES.png"
             },
             {
                 "content" : "Este libro aparece en una época de desborde incontrolado de los sectores populares en el país que, irrumpiendo a través de las barreras impuestas por un Estado y una economía nacional en crisis, parecía por momentos precipitar los signos de la bancarrota económica y el caos. \nEl proceso social que el texto analiza continúa vigente, porque ha llevado a acelerar la transformación política peruana y delinear el nuevo rostro nacional, con rasgos cada vez más nítidos, como se indica en la siguiente frase, con la que culmina el libro: “El Perú Oficial no podrá imponer otra vez sus condiciones. Deberá entrar en diálogo con las masas en desborde, para favorecer la verdadera integración de sus instituciones emergentes en el Perú que surge. Pero para esto, deberá aceptar los términos de la nueva formalidad que las masas tienen en proceso de elaboración espontánea. Sólo en esas condiciones podrá constituirse la futura legitimidad del Estado y la autoridad de la Nación.",
-                "src" : "./public/textos/3-DESBORDE POPULAR.png"
+                "src" : "./textos/3-DESBORDE POPULAR.png"
             },
             {
                 "content" : "&quot;Historia del Tahuantinsuyu&quot; es el resultado de más de cuarenta a&#241;os de investigación histórica realizada por María Rostworowski y es la síntesis metodológica del trabajo desplegado por la autora a lo largo de esos a&#241;os. \nEn este estudio la investigadora analiza y reflexiona sobre su propia obra y la de otros especialistas y utiliza, además, numerosos documentos publicados y muchos otros aún inéditos. \nEste libro constituyó una actualización etnohistórica y ofreció al público en general un nuevo enfoque del antiguo Perú que cuestiona y reformula los planteamientos tradicionales. Es, en ese sentido, un estímulo para seguir profundizando en el conocimiento del Estado inca.",
-                "src" : "./public/textos/4-MROST.png"
+                "src" : "./textos/4-MROST.png"
             },
             {
                 "content" : "Este libro se publicó en un momento en el que las causas que explicaban el subdesarrollo y la crisis en el Perú eran buscadas en las relaciones conflictivas con el exterior, minimizando la dinámica interna. \nEn respuesta a ello, el libro plantea que las relaciones económicas y políticas internas, en un país social y económicamente fragmentado, llevaron a los gobiernos a una oscilación pendular entre políticas económicas liberales en un extremo, y populistas en el otro, lo que contribuyó a amplificar la inestabilidad inherente a los ciclos económicos y a alimentar la inestabilidad política. \nEl libro sostiene que es por estas razones que la “gobernabilidad” del país ha sido progresivamente debilitada y que cualquier propuesta de desarrollo para el Perú requerirá necesariamente la disminución de la amplitud de las oscilaciones del “péndulo peruano”.",
-                "src" : "./public/textos/5-PENDULO.png"
+                "src" : "./textos/5-PENDULO.png"
             },
             {
                 "content" : "Este libro trata sobre el devenir de grupos de migrantes, provenientes de pueblos diversos en un contexto urbano de grandes transformaciones, de la organización, de la producción y reproducción hacia formas más heterogéneas y complejas. \nEl estudio se encaminó a la comprensión de la incidencia del pasado rural en el proceso de urbanización e hizo una selección de pueblos con miras a representar la mayor variedad de culturas campesinas que contribuyeron al crecimiento de Lima. Se partió de la dicotomía costa-sierra y se escogió al azar doce pueblos diseminados por estas dos grandes regiones económicas y culturales. \nSu vigencia reside en que la Lima de hoy es una ciudad de inmigrantes que se desenvuelven en ella con miras a su bienestar e independencia económica, y que utilizan el bagaje cultural de sus pueblos de origen para optimizar su inserción en la urbe.",
-                "src" : "./public/textos/6-CABALLOS DE TROYA.png"
+                "src" : "./textos/6-CABALLOS DE TROYA.png"
             },
             {
                 "content" : "En un régimen democrático, idealmente, el sistema de representación hace de la política el espejo en el que se ve reflejada la ciudadanía. A veces este espejo devuelve una imagen distorsionada. \nEn el Perú, durante la coyuntura crítica de fines de los a&#241;os ochenta e inicios de los noventa, los vínculos entre los partidos y la sociedad —y las imágenes correspondientes— empezaron a resquebrajarse. La democracia se halló de pronto poblada de espejismos: los partidos creían ver la sociedad, cuando en realidad solo veían grupos poco representativos. Sectores sociales cada vez más grandes dejaron de reconocerse en los partidos y empezaron a buscar nuevos caminos.\nEste libro intenta explicar cómo se produjo el colapso del sistema de partidos políticos surgido en aquella época y, en esta medida, da luces para fortalecer la democracia en el Perú.",
-                "src" : "./public/textos/7-ESPEJISMO.png"
+                "src" : "./textos/7-ESPEJISMO.png"
             },
             {
                 "content" : "La historia del Perú de la cual se da cuenta en este libro corresponde a los últimos doscientos a&#241;os: comienza con los sucesos que condujeron a la independencia y termina con los avatares del país en el segundo decenio del siglo veintiuno. El eje organizador de la exposición son los proyectos de reforma del país que, aproximadamente, cada medio siglo, modificaron el perfil de la historia peruana y la pusieron en sintonía con los grandes procesos mundiales. Estos proyectos nacieron, por lo general, de una crítica a la situación del momento, haciendo un diagnóstico de los males y proponiendo las reformas que lo remediasen. No siempre lograron convencer a la gente de la bondad de su alternativa, o no siempre contaron con las circunstancias propicias para su aplicación, pero cuando lo hicieron, culminaron en un conjunto de logros y fracasos que en este libro los autores procuran delinear con objetividad y cuidado.",
-                "src" : "./public/textos/8-HPC.png"
+                "src" : "./textos/8-HPC.png"
             },
             {
                 "content" : "En &quot;La década de la antipolítica&quot;, Carlos Iván Degrerori nos lleva de la mano durante uno de los periodos más oscuros de la historia del Perú. A contrapelo de la falta de transparencia que caracterizó la acción política, económica y social de la década de 1990, en este libro Degregori da luces sobre la manera cómo sectores sociales importantes —y por varios momentos también mayoritarios— acompa&#241;aron con la aprobación, el silencio o la inacción, un régimen que negó una parte importante de la esencia de la política, es decir, el logro de acuerdos, para privilegiar las otras partes asociadas al ejercicio déspota del poder. \nPublicado por primera vez el a&#241;o 2000 y con una segunda edición al a&#241;o siguiente, “La década de la antipolítica” fue el texto escogido por el propio autor para continuar con sus Obras Escogidas.",
-                "src" : "./public/textos/9-LA DECADA DE LA ANTI.png"
+                "src" : "./textos/9-LA DECADA DE LA ANTI.png"
             },
             {
                 "content" : "&quot;Memorias de un soldado desconocido&quot; es una oportunidad singular de conocer parte de la historia reciente de Perú narrada a través de la vida del hoy antropólogo Lurgio Gavilán, que relata en primera persona su paso por Sendero Luminoso y luego por las Fuerzas Armadas. Por si fuera poco, el protagonista narra también su experiencia en el convento, con lo que reúne en estas páginas a tres actores clave de la época en el país: Sendero Luminoso, Ejército, Iglesia. \nA través de este libro, cobra inusitada relevancia la autobiografía como género para representar una realidad con profundidad. Desde un punto de vista particular, el texto permite además cuestionar conflictos y contextos de violencia, con la invitación a pensar en las esperanzas que se abren desde historias como las de Lurgio, que son al mismo tiempo testimonios de humanidad en medio de la guerra.",
-                "src" : "./public/textos/10-SOLDADO.png"
+                "src" : "./textos/10-SOLDADO.png"
             },
             {
                 "content" : "La corrupción constituye un fenómeno insidioso, amplio, variado y global que comprende actividades tanto públicas como privadas. No se trata únicamente del tosco saqueo del patrimonio del Estado. La corruptela comprende el ofrecimiento y la recepción de sobornos; la malversación y mala asignación de fondos y gastos públicos; los escándalos financieros y políticos; el fraude electoral, el tráfico de influencias y otras trasgresiones administrativas como el financiamiento ilegal de partidos políticos en busca de favores indebidos. \nNo obstante, hasta esta publicación ha sido poco lo que sabíamos acerca de las causas específicas de la corrupción en el país y sus costos económicos e institucionales. Desde una perspectiva histórica o de larga duración, el minucioso trabajo de Alfonso W. Quiroz, basado en una amplia gama de fuentes de archivos y en interpretaciones sugerentes, nos presenta un país profundamente afectado por una corrupción administrativa y estatal, que puede medirse desde los inicios del periodo colonial hasta nuestros días. El autor describe y analiza con detalle el abuso de los recursos públicos y explica cómo la corrupción ha limitado el desarrollo y el progreso del país",
-                "src" : "./public/textos/11-CORRUPCION.png"
+                "src" : "./textos/11-CORRUPCION.png"
             },
             {
                 "content" : "&quot;Las desigualdades en el Perú: balances críticos&quot; es un libro que recoge un conjunto de ensayos que buscan comprender las diferentes dimensiones y expresiones de las desigualdades en el país. Este libro se constituyó en la base de un programa institucional de investigaciones del Instituto de Estudios Peruanos, que buscaba justamente entender cómo en un momento de crecimiento económico y de expansión de un conjunto de derechos, las desigualdades persistían de forma permanente. \nEl libro recoge entonces un conjunto de ideas que finalmente dan cuenta de dos asuntos fundamentales: uno primero, que las desigualdades son cada vez más complejas, que ya no son sólo la expresión vertical de una situación asimétrica, sino que muestran que entre grupos —que aparentemente eran homogéneos— estas desigualdades también aparecen. Y la segunda idea es que las desigualdades ya no son sólo un tema del plano económico vinculado a la distribución de ingresos o de recursos, sino que aparecen dos campos particulares vinculados a las desigualdades: el político y el cultural, que tienen que ver claramente con las posibilidades de participación de la ciudadanía, en esta idea de una ciudadanía mucho más activa y plena, y el reconocimiento del otro como un sujeto cultural que, a partir de su diferencia,  es capaz de vincularse con los demás. Por lo tanto, este texto y los siguientes que aparecieron en el marco del programa institucional del Instituto de Estudios Peruanos, marcaron el rumbo de las nuevas discusiones acerca de las desigualdades sociales en el Perú.",
-                "src" : "./public/textos/12-DESIGUALDADES.png"
+                "src" : "./textos/12-DESIGUALDADES.png"
             },
             {
                 "content" : "Este libro retoma la tradición del Instituto de Estudios Peruanos de publicar ensayos interpretativos de largo recorrido sobre la historia peruana. Once investigadores e investigadoras de diferentes disciplinas (antropólogos, historiadores, economistas, sociólogos y científicos políticos) se preguntan por los cambios y continuidades desde el día de la independencia hasta la actualidad. \nSu indagación plantea preguntas clave, plenamente vigentes: qué hicimos bien, qué hicimos mal y qué podemos hacer mejor para convertirnos en una nación de ciudadanos libres, independientes e iguales.",
-                "src" : "./public/textos/13-LA PROMESA.png"
+                "src" : "./textos/13-LA PROMESA.png"
             }
         ],
         "links" : [

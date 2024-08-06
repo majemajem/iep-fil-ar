@@ -1,3 +1,4 @@
+var AudioContext = window.AudioContext || window.webkitAudioContext;
 const audioContext = new AudioContext();
 const modalTrack = document.querySelectorAll("a-entity.contenedor");
 const sceneEl = document.querySelector('a-scene');
@@ -16,7 +17,7 @@ function insertarData(arrayOfEntities, arrayOfData) {
         } else if (arrayOfData[0].links[index].type == 'compra') {
             entity.insertAdjacentHTML('beforeend', `<a-image class="clickable compra" src="#compra" position="1 0.3 1.5" height="0.15" width="0.6" animation="property: scale; to: 1.3 1.3 1.3; dur: 2000; easing: easeInOutQuad; loop: true; dir: alternate" material geometry></a-image>`);
         } else {
-            entity.insertAdjacentHTML('beforeend', `<a-image class="clickable descarga" src="#descarga" position="1 0.3 1.5" height="0.15" width="0.6" animation="property: scale; to: 1.3 1.3 1.3; dur: 2000; easing: easeInOutQuad; loop: true; dir: alternate" material geometry></a-image>`);
+            entity.insertAdjacentHTML('beforeend', `<a-image class="clickable descarga" src="#descarga" position="1 0.3 2" height="0.15" width="0.6" animation="property: scale; to: 1.3 1.3 1.3; dur: 2000; easing: easeInOutQuad; loop: true; dir: alternate" material geometry></a-image>`);
         };
 
         buttonsEnlace = document.querySelectorAll("a-image.clickable");
@@ -55,7 +56,7 @@ function activarLinks(botones, arrayOfData) {
 };
 
 function fetchJSONData() {
-    fetch("./public/data/datos.json")
+    fetch("./data/datos.json")
         .then((res) => {
             if (!res.ok) {
                 throw new Error
